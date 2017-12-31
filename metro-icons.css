@@ -32,6 +32,10 @@
   font-size: 3.5rem;
   vertical-align: -35%;
 }
+.mif-32x {
+  font-size: 80rem;
+  vertical-align: -35%;
+}
 /* transform functions */
 /* Block function */
 .ani-spin,
