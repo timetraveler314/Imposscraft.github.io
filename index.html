@@ -4,26 +4,81 @@
 		<link rel="stylesheet" href="metro.css" type="text/css" />
 		<link rel="stylesheet" href="metro.min.css" type="text/css" />
 		<link rel="stylesheet" href="metro-colors.css" type="text/css" />
-		<link rel="stylesheet" href="metro-colors.min.css" type="text/css" />
 		<link rel="stylesheet" href="metro-icons.css" type="text/css" />
 		<link rel="stylesheet" href="metro-icons.min.css" type="text/css" />
-		<script src="metro.js"/>
-		<script src="metro.min.js"/>
-		<script src="widget.js"/>
-		<script src="window.js"/>
-		<script src="global.js"/>
-		<script src="dialog.js"/>
-		<script src="draggable.js"/>
-		<script src="requirements.js"/>
-		<script src="select.js"/>
-		<script src="slider.js"/>
-		<script src="tabcontrol.js"/>
-		<script src="tile.js"/>
+		<link rel="shortcut icon" type="image/x-icon" href="https://metroui.org.ua/favicon.ico">
+		<style>
+        .login-form {
+            width: 25rem;
+            height: 18.75rem;
+            position: fixed;
+            top: 50%;
+            margin-top: -9.375rem;
+            left: 50%;
+            margin-left: -12.5rem;
+            background-color: #ffffff;
+            opacity: 0;
+            -webkit-transform: scale(.8);
+            transform: scale(.8);
+        }
+    </style>
+		<script src="metro.js">
+		</script>
+		<script src="preloader.js">
+		</script>
+		<script src="metro.min.js">
+		</script>
+		<script src="widget.js">
+		</script>
+		<script src="window.js">
+		</script>
+		<script src="global.js">
+		</script>
+		<script src="dialog.js">
+		</script>
+		<script src="draggable.js">
+		</script>
+		<script src="requirements.js">
+		</script>
+		<script src="select.js">
+		</script>
+		<script src="slider.js">
+		</script>
+		<script src="tabcontrol.js">
+		</script>
+		<script src="tile.js">
+		</script>
+		<script src="initiator.js">
+		</script>
 	</head>
-	<body>
-		<div data-role="dialog"
-    data-windows-style="true">
-	hi
-		</div>
+	<body class="bg-darkteal">
+	
+    <div class="login-form padding20 block-shadow" style="opacity: 1; transform: scale(1); transition: 0.5s;">
+        <form>
+            <h1 class="text-light">WinHtml 10.0</h1>
+            <hr class="thin">
+            <br>
+            <div class="input-control text full-size" data-role="input">
+                <label for="user_login">账户:</label>
+                <input type="text" name="user_login" id="user_login" style="padding-right: 39px;">
+                <button class="button helper-button clear" tabindex="-1" type="button"><span class="mif-cross"></span></button>
+            </div>
+            <br>
+            <br>
+            <div class="input-control password full-size" data-role="input">
+                <label for="user_password">密码:</label>
+                <input type="password" name="user_password" id="user_password" style="padding-right: 39px;">
+                <button class="button helper-button reveal" tabindex="-1" type="button"><span class="mif-looks"></span></button>
+            </div>
+            <br>
+            <br>
+            <div class="form-actions">
+                <button type="submit" class="button primary" onclick="window.location.href='main.html';">登录</button>
+                <button type="button" class="button link">取消</button>
+            </div>
+        </form>
+    </div>
+	</div>
+		
 	</body>
 </html>
