@@ -1,6 +1,9 @@
 .op-default {
   background-color: rgba(27, 161, 226, 0.7);
 }
+.darkwin{
+	color: #07456c !important;
+}
 .bd-black {
   border-color: #000000 !important;
 }
