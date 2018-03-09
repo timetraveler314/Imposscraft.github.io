@@ -8,74 +8,65 @@
 		<link rel="stylesheet" href="metro-icons.min.css" type="text/css" />
 		<link rel="shortcut icon" type="image/x-icon" href="https://metroui.org.ua/favicon.ico">
 		<style>
-        #taskbar{
-        width: 100%;
+body{
+	
+}
+#start_icon{		
+    	padding: 7px;
+}
+#taskbar{
+	width: 100%;
         height: 60px;
         position: fixed;
-        bottom: 0;}
-		#menubar{
-				 display: none;
-            position: absolute; 
-			bottom:45px;
-            left: 0%; 
-            width: 450; 
-            height: 700; 
-            background-color:#373737;
-            z-index:1001; 
-            
-			}
-    
-    </style>
-		<script src="metro.js">
-		</script>
-		<script src="preloader.js">
-		</script>
-		<script src="metro.min.js">
-		</script>
-		<script src="widget.js">
-		</script>
-		<script src="window.js">
-		</script>
-		<script src="global.js">
-		</script>
-		<script src="dialog.js">
-		</script>
-		<script src="draggable.js">
-		</script>
-		<script src="requirements.js">
-		</script>
-		<script src="select.js">
-		</script>
-		<script src="slider.js">
-		</script>
-		<script src="tabcontrol.js">
-		</script>
-		<script src="tile.js">
-		</script>
-		<script src="initiator.js">
-		</script>
-	</head>
-	<body style="background:#07456C ; background-size: 100% 100% ; background-image: url(wp.jpg)">	
-		<script type="text/javascript">
-		function showmenu(){
-			var menustatus=document.getElementById('menubar').style.display;
-			if(menustatus=='block'){
-				document.getElementById('menubar').style.display='none';
-			}else{
-				document.getElementById('menubar').style.display='block';
-			}
-		}
-			
-		</script>
-		<div style="margin-bottom: 45px ;height:calc(100% - 45px) ;position：absolute;width:100%;padding:10px">
-			<div class='mycomputer' style="height:80px;width:80px">
-				<center><img src="computer.ico" width="60px" height="60px" /></center>
-				<center><span style="color:#FFFFFF ; ">此电脑</span></center>
-			</div>
+        bottom: 0;
+}
+#menubar{
+	display: none;
+        position: absolute; 
+	bottom:45px;
+        left: 0%; 
+        width: 450; 
+        height: 700; 
+        background-color:#373737;
+        z-index:1001;    
+}
+    		</style>
+
+</head>
+<body>	
+	<div id="desktop" style="background:#07456C ; background-size: 100% 100% ; background-image: url(wp.jpg)margin-bottom: 45px ;height:calc(100% - 45px) ;position：absolute;width:100%;padding:10px">
+		<div class='mycomputer' style="height:80px;width:80px">
+			<center><img src="computer.ico" width="60px" height="60px" /></center>
+			<center><span style="color:#FFFFFF ; ">此电脑</span></center>
 		</div>
-	<div height=45 width=100% style="width: 100%;      height: 45px;       position: fixed;       bottom: 0;background:#5B5B5B"  >
-		<img src="win10.png" alt="" width="40" height="40" onClick="showmenu()"/>
+	</div>
+	<div id="taskbar"style="width: 100%;      height: 45px;       position: fixed;       bottom: 0;background:#5B5B5B"  >
+		<img id="start_icon" src="win10.png" alt="" width="40" height="40" onClick="showmenu()"/>
 		<div id="menubar" ></div>
 	</div>
-	</body>
+	<script type="text/javascript">
+function showmenu(){
+	var menustatus=document.getElementById('menubar').style.display;
+	if(menustatus=='block'){
+		document.getElementById('menubar').style.display='none';
+	}else{
+		document.getElementById('menubar').style.display='block';
+	}
+}
+	</script>
+	<script src="metro.js"></script>
+	<script src="preloader.js"></script>
+	<script src="metro.min.js"></script>
+	<script src="widget.js"></script>
+	<script src="window.js"></script>
+	<script src="global.js"></script>
+	<script src="dialog.js"></script>
+	<script src="draggable.js"></script>
+	<script src="requirements.js"></script>
+	<script src="select.js"></script>
+	<script src="slider.js"></script>
+	<script src="tabcontrol.js"></script>
+	<script src="tile.js"></script>
+	<script src="initiator.js"></script>
+</body>
 </html>
