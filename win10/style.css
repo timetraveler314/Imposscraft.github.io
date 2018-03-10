@@ -22,16 +22,17 @@ body{
 	background:#5B5B5B
 }
 #menubar{
-  display: none;
-  position: absolute; 
+  	display: none;
+  	position: absolute; 
 	bottom:45px;
-  left: 0%; 
-  width: 450; 
-  height: 700; 
-  background-color:#373737;
-  z-index:1001;    
+  	left: 0%; 
+  	width: 450; 
+  	height: 700; 
+  	background-color:#373737;
+  	z-index:1001;    
 }
 .file{
+	text-align: -webkit-center;
 	height:80px;
 	width:80px;
 }
