@@ -21,7 +21,7 @@ body{
 	width:100%;
 	padding:10px;
 }
-#start_icon{		
+#start{		
     	padding: 7px;
 }
 #taskbar{
@@ -59,22 +59,21 @@ body{
 		</div>
 	</div>
 	<div id="taskbar">
-		<img id="start_icon" src="win10.png" alt="Start" width="40" height="40" onClick="showmenu()"/>
+		<img id="start" src="win10.png" alt="Start" width="40" height="40"/>
 		<div id="menubar" ></div>
 	</div>
 	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script type="text/javascript">
-function showmenu(){
-	var menustatus=document.getElementById('menubar').style.display;
-	if(menustatus=='block'){
-		document.getElementById('menubar').style.display='none';
-	}else{
-		document.getElementById('menubar').style.display='block';
+$('#start').click(function (){
+	if($('#menubar').css('display') =='block'){
+		$('#menubar').css('display','none');
+	} else {
+		$('#menubar').css('display','block');
 	}
-}
+});
 	</script>
 	<script src="metro.js"></script>
-	<script src="preloader.js"></script>
+	<!--<script src="preloader.js"></script>-->
 	<script src="metro.min.js"></script>
 	<script src="widget.js"></script>
 	<script src="window.js"></script>
