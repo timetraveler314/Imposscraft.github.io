@@ -7,49 +7,7 @@
 	<link rel="stylesheet" href="metro-icons.css" type="text/css" />
 	<link rel="stylesheet" href="metro-icons.min.css" type="text/css" />
 	<link rel="shortcut icon" type="image/x-icon" href="https://metroui.org.ua/favicon.ico">
-	<style>
-body{
-	
-}
-#desktop{
-	background:#07456C;
-	background-size: 100% 100% ;
-	background-image: url(wp.jpg);
-	margin-bottom: 45px ;
-	height:calc(100% - 45px) ;
-	position：absolute;
-	width:100%;
-	padding:10px;
-}
-#start{		
-    	padding: 7px;
-}
-#taskbar{
-	width: 100%;
-	height: 45px;
-	position: fixed;
-	bottom: 0;
-	background:#5B5B5B
-}
-#menubar{
-	display: none;
-        position: absolute; 
-	bottom:45px;
-        left: 0%; 
-        width: 450; 
-        height: 700; 
-        background-color:#373737;
-        z-index:1001;    
-}
-.file{
-	height:80px;
-	width:80px;
-}
-.file-name{
-	color:#FFFFFF;
-}
-    		</style>
-
+	<link rel="shortcut icon" type="image/x-icon" href="style.css">
 </head>
 <body>	
 	<div id="desktop">
@@ -63,15 +21,6 @@ body{
 		<div id="menubar" ></div>
 	</div>
 	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script type="text/javascript">
-$('#start').click(function (){
-	if($('#menubar').css('display') =='block'){
-		$('#menubar').css('display','none');
-	} else {
-		$('#menubar').css('display','block');
-	}
-});
-	</script>
 	<script src="metro.js"></script>
 	<!--<script src="preloader.js"></script>-->
 	<script src="metro.min.js"></script>
@@ -86,5 +35,6 @@ $('#start').click(function (){
 	<script src="tabcontrol.js"></script>
 	<script src="tile.js"></script>
 	<script src="initiator.js"></script>
+	<script src="main.js"></script>
 </body>
 </html>
