@@ -2,6 +2,7 @@
 <head>
 	<title>Select::System</title>
 	<base href="https://imposscraft.github.io/" target="_blank">
+	<link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css"/>
 	<link rel="stylesheet" href="metro.css" type="text/css" />
 	<link rel="stylesheet" href="metro.min.css" type="text/css" />
 	<link rel="stylesheet" href="metro-colors.css" type="text/css" />
@@ -12,12 +13,17 @@
 </head>
 <body>	
 	<div id="desktop">
-		<div id='mycomputer' class="file" alt="Icon_pc">
+		<div id='ico_pc' class="file" alt="Icon_pc">
 			<img src="computer.ico" width="60px" height="60px"/>
 			<br/>
 			<span class="file-name">此电脑</span>
 		</div>
 	</div>
+	<!-- -->
+	<div data-role="window" class="p-2" id="wnd_pc" style="display:none" data-icon="" data-title="此电脑" data-shadow="true" data-draggable="true" data-resizable="true" >
+	    	This is a simple window
+	</div>
+	<!-- -->
 	<div id="taskbar">
 		<img id="start" src="win10.png" alt="Start" width="40" height="40"/>
 		<div id="menubar" ></div>
