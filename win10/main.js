@@ -1,16 +1,20 @@
 $(document).ready(function(){
-$("#menubar").click(function(){
-	if($('#menubar').css('display') =='block'){
+$("#start").click(function(){
+	$('#menubar').toggle(500);
+		/*.css('display') =='block'){
 		$('#menubar').css('display','none');
 	} else {
 		$('#menubar').css('display','block');
-	}}
+	}*/
+}
 );
 $("#ico_pc").click(function(){
-	if($('#wnd_pc').css('display') =='block'){
+	if($('#wnd_pc').toggle(500);
+	   /*.css('display') =='block'){
 		$('#wnd_pc').css('display','none');
 	} else {
 		$('#wnd_pc').css('display','block');
-	}}
+	}*/
+	}
 );
 });
