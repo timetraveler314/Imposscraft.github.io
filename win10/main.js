@@ -9,7 +9,7 @@ $("#start").click(function(){
 }
 );
 $("#ico_pc").click(function(){
-	if($('#wnd_pc').toggle(500);
+	$('#wnd_pc').toggle(500);
 	   /*.css('display') =='block'){
 		$('#wnd_pc').css('display','none');
 	} else {
