@@ -22,7 +22,7 @@ body{
 	background:#5B5B5B
 }
 #menubar{
-  	display: none;
+  	/*display: none;*/
   	position: absolute; 
 	bottom:45px;
   	left: 0%; 
